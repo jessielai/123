@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+Your Score:<br>
+<input type="number" name="score" id="x" value=0><br>
+
+<script>
+function myFunction() {
+  var x;
+  x=parseInt(document.getElementById("x").value);
+  if (x< 60) {
+      document.getElementById("demo").innerHTML = "不及格QQ";
+  }
+  else {
+      document.getElementById("demo").innerHTML = "及格!";
+  }
+}
+</script>
+<button onclick="myFunction()">submit</button>
+<br><output id="demo"></output>
+</body>
+</html>

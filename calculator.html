@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Functions</h1>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+
+First number:<br>
+<input type="number" name="firstnum" id="x" value=1><br>
+Last number:<br>
+<input type="number" name="lastnum" id="y" value=1><br>
+
+<script>
+function myFunction1() {
+    var x,y
+    x=parseInt(document.getElementById("x").value);
+    y=parseInt(document.getElementById("y").value);
+    document.getElementById("demo").innerHTML=x+y;
+}
+function myFunction2() {
+    var x,y
+    x=parseInt(document.getElementById("x").value);
+    y=parseInt(document.getElementById("y").value);
+    document.getElementById("demo").innerHTML=x-y;
+}
+function myFunction3() {
+    var x,y
+    x=parseInt(document.getElementById("x").value);
+    y=parseInt(document.getElementById("y").value);
+    document.getElementById("demo").innerHTML=x*y;
+}
+function myFunction4() {
+    var x,y
+    x=parseInt(document.getElementById("x").value);
+    y=parseInt(document.getElementById("y").value);
+    document.getElementById("demo").innerHTML=x/y;
+}
+function myFunction5() {
+    document.getElementById("x").value=0;
+    document.getElementById("y").value=0;
+}
+</script>
+<button onclick="myFunction1()">+</button>
+<button onclick="myFunction2()">-</button>
+<button onclick="myFunction3()">*</button>
+<button onclick="myFunction4()">/</button>
+<button onclick="myFunction5()">c</button>
+<br><output id="demo"></output>
+</body>
+</html>
